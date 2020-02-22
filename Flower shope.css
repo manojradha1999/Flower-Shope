@@ -1,0 +1,48 @@
+.SmallHeading
+{
+    color:rgb(11, 11, 95);
+    
+  }
+  .Heading1
+  {
+      color:rgb(11, 11, 95);
+  }
+  .carddteails{
+     
+       background-color :rgb(255, 186, 122);
+       width: 45% ;
+       margin-left: 52%;
+  }
+  #NavigateBar
+  {
+      background-color: rgb(149,207,13);
+      padding : 15px
+  }
+  .Margin
+  {
+      margin-left: 52%;
+      margin-top: 0%;
+      
+  }
+  
+  .column {
+      float: left;
+      margin-top: 5%;
+      margin-left: 5%;
+  
+    }
+    
+    .Payment
+    {
+      float: middle;
+    
+    }
+    .right {
+      float: right;
+      
+    }
+    
+    div.disabled {
+      overflow-x: hidden; 
+      overflow-y: scroll; 
+  }

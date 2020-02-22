@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Flower shope.css">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="flower shope.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <form id ="Form">
+        <div class="Heading">
+         <h2>FLOWER SHOP ONLINE</h2>
+        </div>
+    
+    
+        <div id="NavigateBar"></div>
+        
+        <div class="column">
+         <img src="shopping.png" alt="Flowers"width="70%" height="15%">
+        </div>  
+        
+        <div class="right">
+            <table>
+      
+    </table>
+        </div>
+       
+
+            
+<div class="Payment">
+            <div class="Margin">
+            <table >
+                <div class="SmallHeading">
+                 <h3>Secure Payment Page</h3>
+                </div>
+                
+            <tr>
+                <td><label><b>Select Language</b></label></td>
+                <td>
+                <select id="Please Select">
+                <option value="Tamil">Tamil</option>
+                <option value="English">English</option>
+                <option value="Telugu">Telugu</option>
+                </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Payment method</label></td>
+                <td><b>Visa</b></td>
+                <td rowspan="3"><img src="Visa.jpg" alt="payment" width="20%" style="margin-left: 70%;" ></td>
+
+            </tr>
+            <tr>
+                <td><label>Description</label></td>
+                <td><b>Item Ordered</b></td>
+            </tr>
+            <tr>
+                <td><label>Amount</label></td>
+                <td><b>&euro; 100.00</td>
+            </tr>
+
+            </table>
+
+        </div>
+        <div  >
+            <table class="carddteails">
+           <tr>
+               <td colspan="2" style="color:white;background-color:yellowgreen;">Card Details<i style="position: relative;right: -600px;color: black;"class='fas fa-question-circle'></i></td>
+           </tr>
+              <tr>
+               <td colspan="2">You must fill in fields marked with *</td>
+
+           </tr>
+           <tr>
+               <td><label>* Card Number</label></td>
+               <td><input type="text" id="Cnumber" size = 50% name="Cardno" maxlength="16" onchange="CardNumber()"><span id="card" style="color: black;"></span></td>
+           </tr>
+           <tr>
+               <td style="text-decoration-line: underline;">*<label>Security Code</label></td>
+               <td><input type="password" id="pin" size = 5% name="SecurityCode" maxlength="4" onchange="pin()"><span id="security" style = "color:black;"></span></td>
+
+           </tr>
+           <tr>
+               
+               <td><label>* Expire Date</label></td>
+               
+                <td>
+                    <select id="Please Select">
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    </select>
+                    
+                    <select id="Please Selects">
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2021">2021</option> 
+                    <option value="2022">2022</option>
+                    <option value="2023">2023</option>
+                    <option value="2024">2024</option>
+                    </select>
+                    </td>
+                    <span id="time"></span>
+               </td>
+           </tr>
+           <tr>
+               <td><label>* CardHolder's name</label></td>
+               <td><input type="text" id="CHolder" size = 50% name="holder" maxlength="20" onchange="Name()"><br>
+                <span id="holderName" style="color:black;"></span>
+            </td>
+               
+           </tr>
+
+       
+               <tr>
+                   <td colspan="2" style="color:white;background-color:yellowgreen">CardHolder Details<i style="position: relative;right: -560px;color: black;"class='fas fa-question-circle'></i></td>
+                </tr>
+               <tr>
+                <td colspan="2">You must fill in fields marked with *</td>
+ 
+            </tr>
+            <tr>
+                <td><label>* Address 1</label></td>
+                <td><input type="text" id="Address" size = 50% name="AddressNumber"><span id="location1" style="color: black;"></span></td>
+            </tr>
+            <tr>
+                <td><label>Address 2</label></td>
+                <td><input type="text" id="Address2" size = 50% name="AddressNumber2"><span id="location2"></span></td>
+            </tr>
+             
+            <tr>
+                <td><label> Address3</label></td>
+                <td><input type="text" id="Address3" size = 50% name="AddressNumber3"><span id="location3" onchange="Place()"></span></td>
+            </tr>
+            <tr>
+                <td><label>* Town/City</label></td>
+                <td><input type="text" id="City" size = 50% name="City" onchange="city()"><span id="townId" style="color: black;"></span></td>
+            </tr>
+            <tr>
+                <td><label> Region</label></td>
+                <td><input type="text" id="Region" size = 50% name="RegionName" onchange="Region()"><span id="region" style="color: black;"></span></td>
+            </tr>
+            <tr>
+                <td><label>* PostCode/ZipCode</label></td>
+                <td><input type="text" id="zipCode" size = 12% name="Zip Code" maxlength="6" onchange="ZipCode()"><br><span id="postCode" style="color: black;"></span></td>
+            </tr>
+            <tr>
+                <td><label>Country</label></td>
+               
+                <td style="size: 40%">
+                    <select id="country select" >
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="India">India</option>
+                    <option value="USA">USA</option>
+                    <option value="Germany">Germany</option>
+                    </select>
+                    <span id="country"></span>
+                    </td>
+            </tr>
+            <tr>
+                <td><label>Telephone</label></td>
+                <td><input type="text" id="Telephone" size = 12% name="TelephoneNumber" onchange="Telephone()"><span id="telephone" style="color:black;"></span></td>
+            </tr>
+            <tr>
+                <td><label>Fax</label></td>
+                <td><input type="text" id="Fax" size = 12% name="Fax" onchange="Fax()"><span id="fax" style="color:black;"></span></td>
+            </tr>
+            <tr>
+                <td><label>Email Address</label></td>
+                <td><input type = "text" id="email" size = 50% name="EmailId" onchange="Email()" ><span id="emailId" style="color: black;"></span></td>
+               
+            </tr>
+        </table>
+        </div>
+            <div class="Margin">
+                <img src="Reload.png" alt="icon"width="2%">
+                <input type="reset" style ="border: none;color: rgb(66, 31, 133);background-color: white;"value="START AGAIN"><span style="margin-left: 53%;"></span>
+                <input type="submit" onclick ="CheckBlankSpace()"style ="border: none;color: rgb(66, 31, 133);background-color: white;" value="MAKE PAYMENT">
+                
+                <img src="payment.png" alt="icon"width="2%">
+                 <br>
+                 <br>
+                 <img src="cancel.png" alt="icon"width="2%"> 
+                 <input type="submit" style ="border: none;color: rgb(66, 31, 133);background-color: white;"value="CANCEL">
+                    <hr style="border-color:yellowgreen;">
+             </div>  
+             <div class="Margin">
+             <table>
+                 <tr>
+                     <td style="color: rgb(36, 5, 95);font-family: Arial, Helvetica, sans-serif;font-size: larger;">Refunds and Returns</td>
+                 </tr>
+                 <tr>
+                     <td style="font-size:small;color:rgb(36, 5, 95)">For more information visit our <a href="@" style="color: rgb(66, 31, 133);">Refunds and returns policy</a></td>
+                 </tr>
+                 <tr>
+                     
+                     <td colspan="1" style="font-size:x-small;color: rgb(74, 26, 165);">Payments Powered By</td>
+                     
+                     <td rowspan="2" style="font-size: small;color:black" >For help with your Payments visit the <a href="#" style="color:black">WorldPay help</a> </td>
+                 </tr>
+                 <tr>
+                    <td colspan="1" style="color: rgb(74, 26, 165)" ><b>WorldPay</b></td>
+                 </tr>
+             </table>
+</div>
+             
+             
+             <div  style="background-color:yellowgreen;font-size:xxx-large;color:rgb(15, 15, 77);font-family:Arial, Helvetica, sans-serif"><pre>Thank you for shopping at Flowershop. Have a nice day</pre></td></div>
+            </div>
+            
+
+    </form>
+        
+            </body>
+
+</html>
